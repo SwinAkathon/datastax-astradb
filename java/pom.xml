@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev-astradb</groupId>
+  <artifactId>astradb-basics</artifactId>
+  <version>1.0</version>
+  <name>AstraDB Basics</name>
+  <description>Programming essentials for AstraDB</description>
+  
+  <dependencies>
+  	  <!--Legacy-->
+	  <dependency>
+	   <groupId>com.datastax.oss</groupId>
+	   <artifactId>java-driver-core</artifactId>
+	   <version>4.13.0</version>
+	  </dependency>
+	  <!-- Cloud-native-->
+	  <dependency>
+	    <groupId>io.stargate.grpc</groupId>
+	    <artifactId>grpc-proto</artifactId>
+	    <version>1.0.41</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>io.grpc</groupId>
+	    <artifactId>grpc-netty-shaded</artifactId>
+	    <version>1.41.0</version>
+	  </dependency>
+  </dependencies>
+</project>
