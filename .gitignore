@@ -1,6 +1,11 @@
-install
-/install
 
+# secured (private) connection bundle
+secure-connect-*.zip
+
+# installation files
+install
+
+# project setting stuff
 .settings
 .classpath
 .project
