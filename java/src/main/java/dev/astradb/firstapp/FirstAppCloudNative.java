@@ -35,10 +35,10 @@ import io.stargate.proto.StargateGrpc;
 public class FirstAppCloudNative {
 
   // obtained from the list of Active Databases in the Dashboard
-  private static final String ASTRA_DB_ID = "949fef33-e9af-47c5-8c71-318d4ffc80d1";
-  private static final String ASTRA_DB_REGION = "asia-south1";
-  private static final String ASTRA_TOKEN = "AstraCS:IPCNZrLvOOGyTdMhlKaDMjcc:b4ae399638c89511630b01a2d4be19069be0c22f8b7fa3e96e89fb87f9bcbafc";
-  private static final String ASTRA_KEYSPACE = "first_key_space";
+  private static final String ASTRA_DB_ID = "<<DB_ID>>";
+  private static final String ASTRA_DB_REGION = "<<DB_REGION>>";
+  private static final String ASTRA_TOKEN = "<<YOUR_APP_TOKEN>>";
+  private static final String ASTRA_KEYSPACE = "<<KEY_SPACE>>";
 
   public static void main(String[] args) {
 
@@ -58,8 +58,8 @@ public class FirstAppCloudNative {
     QueryOuterClass.Response queryString = blockingStub
         .executeQuery(QueryOuterClass.Query.newBuilder()
             .setCql(
-                //"SELECT firstname, lastname FROM " + ASTRA_KEYSPACE + ".users"
                 "select release_version from system.local"
+                //"SELECT firstname, lastname FROM " + ASTRA_KEYSPACE + ".users"
                 )
             .build());
     // process the result set
