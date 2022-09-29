@@ -1,8 +1,9 @@
 install
 /install
 
-/.settings
-/.classpath
-/.project
-/target
-/node_modules
+.settings
+.classpath
+.project
+target
+node_modules
+
