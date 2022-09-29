@@ -28,9 +28,9 @@ public class FirstAppLegacy {
     // Create the CqlSession object:
     final String file = "secure-connect-firstdb.zip";
     //   "<<CLIENT ID>>"
-    final String clientId = "IPCNZrLvOOGyTdMhlKaDMjcc";
+    final String clientId = "<<CLIENT ID>>";
     // "<<CLIENT SECRET>>"
-    final String clientSecret = "OR-k5AfmZ8AiQFZA1SvMp-wnnRpXt1,H04yn8Pr3LM0uOESzIUKTt3UZNAtyFm,QM8OUM-GebUdZZIrHE,JKYtPmmsN-PNw.kdWZY6UMNbYlebC,o0aadLi6UjluisPI";
+    final String clientSecret = "<<CLIENT SECRET>>";
     
     URL connectBundleFile = FirstAppLegacy.class.getClassLoader().
         getResource(file);
