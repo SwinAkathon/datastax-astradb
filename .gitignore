@@ -1,3 +1,8 @@
+# C++ binaries
+*.exe
+
+# VScode workspace
+*.code-workspace
 
 # secured (private) connection bundle
 secure-connect-*.zip
